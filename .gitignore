@@ -2,3 +2,6 @@ secrets.yaml
 tts/
 deps/
 home-assistant_v2.db
+.uuid
+home-assistant.log
+.HA_VERSION
