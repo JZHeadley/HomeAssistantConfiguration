@@ -1,0 +1,48 @@
+default_view:
+  view: yes
+  entities:
+    - group.weather
+    - group.network
+    - group.system
+
+media:
+  view: yes
+  entities: 
+    - group.living_room
+
+############################
+#                          #
+#                          #
+#          groups          #
+#                          #
+#                          #
+############################
+
+network:
+  name: Network
+  entities:
+    - input_boolean.restart_hass
+    - switch.executor
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+
+system:
+  name: System
+  entities:
+    - sensor.disk_use_
+    - sensor.ram_free
+    - sensor.since_last_boot
+
+weather:
+  name: Weather
+  entities:
+    - sun.sun
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_summary
+
+living_room:
+  name: Living Room
+  entities:
+    - media_player.roku_5S464W480703
+    - media_player.living_room_home
