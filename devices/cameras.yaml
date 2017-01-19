@@ -1,0 +1,4 @@
+- platform: mjpeg
+  #still_image_url: http://192.168.1.111:8080/shot.jpg
+  mjpeg_url: http://192.168.1.111:8080/video
+  name: 3d Printer

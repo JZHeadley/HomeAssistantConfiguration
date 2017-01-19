@@ -10,6 +10,11 @@ media:
   entities: 
     - group.living_room
 
+Cameras:
+  view: yes
+  entities:
+    - group.camerasGroup
+
 ############################
 #                          #
 #                          #
@@ -40,9 +45,16 @@ weather:
     - sun.sun
     - sensor.dark_sky_apparent_temperature
     - sensor.dark_sky_summary
+    - sensor.dark_sky_daily_summary
+    - sensor.dark_sky_hourly_summary
 
 living_room:
   name: Living Room
   entities:
     - media_player.roku_5S464W480703
     - media_player.living_room_home
+
+camerasGroup:
+  name: Cameras
+  entities:
+    - camera.3d_printer
