@@ -101,6 +101,7 @@ sensor:
       - type: processor_use
       - type: since_last_boot
 
+  - platform: pi_hole
 # Text to speech
 tts:
   platform: google
@@ -118,9 +119,9 @@ input_boolean:
   restart_hass:
     initial: off
 
-
-
-
+emulated_hue:
+  type: google_home
+  listen_port: 80
 
 group: !include groups.yaml
 
